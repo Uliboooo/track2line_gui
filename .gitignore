@@ -1,0 +1,4 @@
+/target
+assets_for_test/assets/
+src/main.rs
+.DS_Store
