@@ -91,9 +91,9 @@ impl eframe::App for T2lFileDialog {
                 println!("chose folder: {:?}", path);
             }
 
-            if let Some(path) = &self.selected_path {
-                ui.label(format!("{:?}", path));
-            }
+            // if let Some(path) = &self.selected_path {
+            //     ui.label(format!("{:?}", path));
+            // }
         });
     }
 }

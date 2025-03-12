@@ -28,7 +28,7 @@ voisona talkなどで提供される音声ファイル名を、同名のテキ�
 
 ![10](readme_resource/0_1_1/10.png)
 ![20](readme_resource/0_1_1/20.png)
-![30](readme_resource/0_1_1/30.png)
+![30](readme_resource/0_2_1/30.png)
 
 ## Features
 
