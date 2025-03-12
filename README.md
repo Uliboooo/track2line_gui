@@ -4,6 +4,8 @@ Track2Line GUI is a graphical user interface application for managing and renami
 
 core functionality is composed of https://github.com/Uliboooo/track2line_lib.
 
+there is cli version: https://github.com/Uliboooo/track2line.
+
 ## what's tool
 
 this is tool that converts name of audio file provide by voisona talk, etc. by referring to a text file of the same name.
