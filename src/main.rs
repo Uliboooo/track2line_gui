@@ -1,3 +1,4 @@
+use egui::FontData;
 use egui_file_dialog::FileDialog;
 use std::path::PathBuf;
 use track2line_lib as t2l;
@@ -26,8 +27,21 @@ impl T2lFileDialog {
 
 impl eframe::App for T2lFileDialog {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        let mut fonts = egui::FontDefinitions::default();
+        fonts.font_data.insert(
+            "japanese_font".to_owned(),
+            FontData::from_static(include_bytes!("../fonts/ipaexg00401/ipaexg.ttf")).into(),
+        );
+        fonts
+            .families
+            .get_mut(&egui::FontFamily::Proportional)
+            .unwrap()
+            .insert(0, "japanese_font".to_owned());
+
+        ctx.set_fonts(fonts);
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.heading("track2line");
+
             if ui.button("chose folder").clicked() {
                 self.file_dialog.pick_directory();
             }
